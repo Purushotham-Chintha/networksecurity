@@ -1,5 +1,9 @@
 pandas
 numpy
+dotenv
+scikit-learn
+pymongo[srv]
+certifi
 
 #-e .
 
