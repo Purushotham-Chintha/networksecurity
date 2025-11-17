@@ -24,8 +24,8 @@ TRAIN_FILE_NAME: str = "train.csv"
 Data ingestion related constants start with DATA INGESTION followed by VAR NAME
 """
 
-DATA_INGESTION_COLLECTION_NAME: str = ""
-DATA_INGESTION_DATABASE_NAME: str = ""
+DATA_INGESTION_COLLECTION_NAME: str = "networkdata"
+DATA_INGESTION_DATABASE_NAME: str = "NetworkSecurity"
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR_NAME: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR_NAME: str = "ingested"

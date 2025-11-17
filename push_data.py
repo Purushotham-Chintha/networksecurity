@@ -7,7 +7,7 @@ import certifi
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from networksecurity.Exception.exception import NetworkSecurityException
-from networksecurity.logging.logger import logging
+# from networksecurity.logging.logger import logging
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -51,15 +51,15 @@ class NetworkDataExtract():
             raise NetworkSecurityException(e, sys)
 
 
-if __name__ == "__main__":
-    file_path = "Network_Data/phisingData.csv"
-
-    Database = "NetworkSecurity"
-    Collection = "networkdata"
-
-    networkobj = NetworkDataExtract()
-    records = networkobj.csv_to_json_convertor(file_path=file_path)
-    print(records)
-
-    no_of_records = networkobj.insert_data_mongodb(records=records, database=Database, collection=Collection)
-    print(no_of_records)
+# if __name__ == "__main__":
+#     file_path = "Network_Data/phisingData.csv"
+#
+#     Database = "NetworkSecurity"
+#     Collection = "networkdata"
+#
+#     networkobj = NetworkDataExtract()
+#     records = networkobj.csv_to_json_convertor(file_path=file_path)
+#     print(records)
+#
+#     no_of_records = networkobj.insert_data_mongodb(records=records, database=Database, collection=Collection)
+#     print(no_of_records)
